@@ -5,7 +5,7 @@ int main()
 {
 
     int num;
-    char ch;
+    char ch = 69;
 
     cout << "Enter a number" << endl;
     cin >> num;
@@ -13,11 +13,11 @@ int main()
     // Outer Loop (rows)
     for (int i = 0; i < num; i++)
     {
-        ch = 'E';
+        ch = 69;
         // Inner Loop (cols)
         for (int j = num; j > 0; j--)
         {
-            cout << ch << " ";
+            cout << (char)ch << " ";
             ch--;
         }
 
@@ -32,10 +32,10 @@ int main()
 if n = 5;
 ---------
 
-E D B C A
-E D B C A
-E D B C A
-E D B C A
-E D B C A
+E D C B A
+E D C B A
+E D C B A
+E D C B A
+E D C B A
 
 */

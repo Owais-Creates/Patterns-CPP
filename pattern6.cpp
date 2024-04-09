@@ -5,7 +5,7 @@ int main()
 {
 
     int num;
-    char ch = 'A'; // ASCII value of 'a' is 97. So, it will be assigned to the variable 'ch'.
+    char ch = 65; 
     cout << "Enter the number" << endl;
 
     cin >> num;
@@ -13,15 +13,15 @@ int main()
     // Outer loop (rows)
     for (int i = 0; i < num; i++)
     {
-        ch = 'A';
         // Inner loop (cols)
         for (int j = 0; j < num; j++)
         {
-            cout << ch << " ";
-            ch++;
+            cout << (char)ch << " ";
         }
         cout << endl;
+        ch++;
     }
+    
 
     return 0;
 }
