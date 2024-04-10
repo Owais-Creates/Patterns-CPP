@@ -4,29 +4,29 @@ using namespace std;
 int main()
 {
 
-  // int num, i, j;
-  // char ch = 65; // ASCII value of A is 65.
+  int num, i, j;
+  char ch = 65; // ASCII value of A is 65.
 
-  // cout
-  //     << "enter the number";
-  // cin >> num;
+  cout
+      << "enter the number";
+  cin >> num;
 
-  // for (i = 0; i < num; i++)
-  // {
-  //     // Space printing
-  //     for (int j = 1; j <= i; j++)
-  //     {
-  //         cout << "  ";
-  //     }
+  for (i = 0; i < num; i++)
+  {
+      // Space printing
+      for (int j = 1; j <= i; j++)
+      {
+          cout << "  ";
+      }
 
-  //     // Inner Loop
-  //     for (j = i + 1; j <= num; j++)
-  //     {
-  //         cout << (char)ch<<" ";
-  //     }
-  //     cout << endl;
-  //     ch++;
-  // }
+      // Inner Loop
+      for (j = i + 1; j <= num; j++)
+      {
+          cout << (char)ch<<" ";
+      }
+      cout << endl;
+      ch++;
+  }
 
   /*
 
@@ -40,20 +40,20 @@ A A A A A
 
   // ----------------------------------------------------------------------------------------------------------------------
 
-  // int num2;
-  // cout << "Enter the number" << endl;
-  // cin >> num2;
+  int num2;
+  cout << "Enter the number" << endl;
+  cin >> num2;
 
-  // // Outer Loop
-  // for (int i = 1; i <= num2; i++)
-  // {
-  //     // Star printing
-  //     for (int j = num2; j >= i ; j--)
-  //     {
-  //         cout << "*" << " ";
-  //     }
-  //     cout << endl;
-  // }
+  // Outer Loop
+  for (int i = 1; i <= num2; i++)
+  {
+      // Star printing
+      for (int j = num2; j >= i ; j--)
+      {
+          cout << "*" << " ";
+      }
+      cout << endl;
+  }
 
   /*
 
@@ -95,8 +95,8 @@ A A A A A
   if n = 5;
   ---------
 
-         *
-       * * *
+          *
+        * * *
       * * * * *
     * * * * * * *
   * * * * * * * * *
