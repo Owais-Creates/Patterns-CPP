@@ -13,19 +13,19 @@ int main()
 
   for (i = 0; i < num; i++)
   {
-      // Space printing
-      for (int j = 1; j <= i; j++)
-      {
-          cout << "  ";
-      }
+    // Space printing
+    for (int j = 1; j <= i; j++)
+    {
+      cout << "  ";
+    }
 
-      // Inner Loop
-      for (j = i + 1; j <= num; j++)
-      {
-          cout << (char)ch<<" ";
-      }
-      cout << endl;
-      ch++;
+    // Inner Loop
+    for (j = i + 1; j <= num; j++)
+    {
+      cout << (char)ch << " ";
+    }
+    cout << endl;
+    ch++;
   }
 
   /*
@@ -47,12 +47,13 @@ A A A A A
   // Outer Loop
   for (int i = 1; i <= num2; i++)
   {
-      // Star printing
-      for (int j = num2; j >= i ; j--)
-      {
-          cout << "*" << " ";
-      }
-      cout << endl;
+    // Star printing
+    for (int j = num2; j >= i; j--)
+    {
+      cout << "*"
+           << " ";
+    }
+    cout << endl;
   }
 
   /*
@@ -78,13 +79,14 @@ A A A A A
     // Space printing
     for (int j = num3 - 1; j > i; j--)
     {
-      cout << " " << " ";
+      cout << " "
+           << " ";
     }
 
     // Star printing
     for (int k = 0; k < (2 * i + 1); k++)
     {
-      cout << "*" << " ";
+      cout << i << " ";
     }
 
     cout << endl;
@@ -104,5 +106,41 @@ A A A A A
 
   */
 
+  //--------------------------------------------------------------------------------------------------------------------
+  int num4;
+  cin >> num4;
+  int z = num4 + 4;
+
+  // OUTER LOOP
+  for (int i = 0; i < num4; i++)
+  {
+    // SPACE PRINTING
+    for (int j = 0; j < i; j++)
+    { // Corrected the condition here
+      cout << "  ";
+    }
+
+    // Star printing
+    for (int k = z; k > 0; k--)
+    {
+      cout << k << " ";
+    }
+    z -= 2;
+    cout << endl;
+  }
+
+  /*
+
+  if n = 5;
+  ---------
+
+  * * * * * * * * *
+    * * * * * * *
+      * * * * *
+        * * *
+         * *
+          *
+
+  */
   return 0;
 }
