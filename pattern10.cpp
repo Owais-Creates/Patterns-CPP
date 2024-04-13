@@ -7,20 +7,19 @@ int main()
   int num, i, j;
   char ch = 65; // ASCII value of A is 65.
 
-  cout
-      << "enter the number";
+  cout << "Enter the number: ";
   cin >> num;
 
   for (i = 0; i < num; i++)
   {
     // Space printing
-    for (int j = 1; j <= i; j++)
+    for (j = 0; j < i; j++)
     {
       cout << "  ";
     }
 
     // Inner Loop
-    for (j = i + 1; j <= num; j++)
+    for (j = i; j < num; j++)
     {
       cout << (char)ch << " ";
     }
@@ -31,62 +30,61 @@ int main()
   /*
 
 A A A A A
-  B B B B
-    C C C
-      D D
-        E
+B B B B
+  C C C
+    D D
+      E
 
 */
 
-  // ----------------------------------------------------------------------------------------------------------------------
+  //----------------------------------------------------------------------------------------------------------------------
 
   int num2;
-  cout << "Enter the number" << endl;
+  cout << "Enter the number: ";
   cin >> num2;
 
   // Outer Loop
-  for (int i = 1; i <= num2; i++)
+  for (i = 0; i < num2; i++)
   {
     // Star printing
-    for (int j = num2; j >= i; j--)
+    for (j = num2; j > i; j--)
     {
-      cout << "*"
-           << " ";
+      cout << "* ";
     }
     cout << endl;
   }
 
   /*
 
-  * * * * *
-  * * * *
-  * * *
-  * *
-  *
+* * * * *
+* * * *
+* * *
+* *
+*
 
-  */
+*/
 
   //-----------------------------------------------------------------------------------------------------------------------
 
   int num3;
-  cout << "Enter the number" << endl;
+  cout << "Enter the number: ";
   cin >> num3;
+  int z = 1;
 
   // Outer Loop
-  for (int i = 0; i < num3; i++)
+  for (i = 0; i < num3; i++)
   {
 
     // Space printing
-    for (int j = num3 - 1; j > i; j--)
+    for (j = num3 - 1; j > i; j--)
     {
-      cout << " "
-           << " ";
+      cout << "  ";
     }
 
     // Star printing
     for (int k = 0; k < (2 * i + 1); k++)
     {
-      cout << i << " ";
+      cout << "* ";
     }
 
     cout << endl;
@@ -94,28 +92,30 @@ A A A A A
 
   /*
 
-  if n = 5;
-  ---------
+if n = 5;
+---------
 
-          *
-        * * *
-      * * * * *
-    * * * * * * *
-  * * * * * * * * *
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
 
 
-  */
+*/
 
   //--------------------------------------------------------------------------------------------------------------------
+
   int num4;
+  cout << "Enter the number: ";
   cin >> num4;
   int z = num4 + 4;
 
   // OUTER LOOP
-  for (int i = 0; i < num4; i++)
+  for (i = 0; i < num4; i++)
   {
     // SPACE PRINTING
-    for (int j = 0; j < i; j++)
+    for (j = 0; j < i; j++)
     { // Corrected the condition here
       cout << "  ";
     }
@@ -123,7 +123,7 @@ A A A A A
     // Star printing
     for (int k = z; k > 0; k--)
     {
-      cout << k << " ";
+      cout << "* ";
     }
     z -= 2;
     cout << endl;
@@ -131,16 +131,70 @@ A A A A A
 
   /*
 
-  if n = 5;
-  ---------
+if n = 5;
+---------
 
-  * * * * * * * * *
-    * * * * * * *
-      * * * * *
-        * * *
-         * *
-          *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+       * *
+        *
+
+*/
+
+  //------------------------------------------------------------------------------------------------------------------------
+
+  int num5;
+  cin >> num5;
+
+  int nsp = 0;
+  int nst = num5;
+
+  for (int i = 1; i <= num5; i++)
+  {
+
+    // space
+    for (int j = 1; j <= nsp; j++)
+    {
+      cout << "  ";
+    }
+
+    // star
+    for (int k = 1; k <= nst; k++)
+    {
+      cout << "* ";
+    }
+
+    // NL
+    cout << endl;
+
+    // updation
+    if (i > num5 / 2)
+    {
+      nsp -= 1;
+      nst += 2;
+    }
+    else
+    {
+      nsp += 1;
+      nst -= 2;
+    }
+  }
+
+  /*
+
+if n = 5;
+--------- 
+
+  * * * * *
+    * * *
+      *
+    * * *
+  * * * * *
 
   */
+
   return 0;
+  
 }
